@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speed Calculator</title>
+</head>
+<script>
+function speedCheck(){
+        var result = "";
+        
+        var speed = parseInt(document.getElementById("speed").value);
+        if (speed < 70){
+            result = "You can go a little faster.";
+        }        
+        if (speed > 120){
+            result = "slow it down a bit!!";
+        }else{
+            result = "Thats a good speed to stay at.";
+        }
+        document.getElementById("result").innerHTML = result;
+}
+
+</script>
+<body>
+    <h2>How Fast do you Drive?</h2>
+    <input type="text" id="speed" />
+    <button type="button" onclick="speedCheck()">Speed</button>
+    Result: <span id="result"></span>
+    
+</body>
+
+</html>

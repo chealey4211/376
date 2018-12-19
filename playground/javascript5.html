@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Lesson 5</title>
+
+        <script>
+
+        function printSquares() {
+            var items = "";
+
+            for (var i = 1; i <= 10; i++) {
+                items += "<li>" + Math.pow(i, 2) + "</li>";
+            }
+
+            document.getElementById("squares").innerHTML = items;
+        }
+
+        //
+        function printroots() {
+            var items = "";
+
+            for (var i = 1; i <= 10; i++) {
+                items += "<li>" + Math.pow(2, i) + "</li>";
+            }
+
+            document.getElementById("roots").innerHTML = items;
+        }
+
+        //
+        function printcubes() {
+            var items = "";
+
+            for (var i = 1; i <= 10; i++) {
+                items += "<li>" + Math.pow(i, 3) + "</li>";
+            }
+
+            document.getElementById("cubes").innerHTML = items;
+        }
+
+        //
+        </script>
+    </head>
+
+    <body>
+
+        <h1>JavaScript Lesson 5</h1>
+
+        <p>
+            The focus of this lesson is <b>for</b> loops. We will use a for loop to print the
+            first 10 square numbers when you click the button.
+        </p>
+
+        <button type="button" onclick="printSquares()">Click for Square Numbers!</button>
+
+        <ol id="squares"></ol>
+
+        <hr />
+
+        <h2>Example 1</h2>
+
+        <p>Write the code to print the first 10 powers of 2 (starting with 0) using a <b>for</b> loop.</p>
+
+        <button type="button" onclick="printroots()">Click for root Numbers!</button>
+
+        <ol id="roots"></ol>
+
+        <hr />
+
+
+        <p>
+            The focus of this lesson is <b>for</b> loops. We will use a for loop to print the
+            first 10 cubed numbers when you click the button.
+        </p>
+
+        <button type="button" onclick="printcubes()">Click for cubed Numbers!</button>
+
+        <ol id="cubes"></ol>
+
+        <hr />
+
+    </body>
+</html>

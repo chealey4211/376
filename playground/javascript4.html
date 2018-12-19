@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Lesson 4</title>
+
+        <script>
+
+        function checkTemperature() {
+            var result = "";
+
+            var temperature = parseInt(document.getElementById("temperature").value);
+            if (isNaN(temperature)) {
+                result = "That's not a number!";
+            } else {
+                var scale = document.getElementById("scale").value;
+                if (scale == "celsius") {
+                    temperature = temperature * 9 / 5 + 32;
+                }
+
+                if (temperature < 60) {
+                    result = "It's too cold!";
+                } else if (temperature > 80) {
+                    result = "It's too hot!";
+                } else {
+                    result = "It's a pleasant day.";
+                }
+            }
+
+            document.getElementById("result").innerHTML = result;
+        }
+
+        </script>
+    </head>
+
+    <body>
+
+        <h1>JavaScript Lesson 4</h1>
+
+        <p>
+            The focus of this lesson is <b>Booleans</b>, <b>comparisons</b>, and <b>conditional
+            statements</b>. We will use this temperature analyzer as an example.
+        </p>
+
+        <form>
+            What's the temperature?
+            <input type="text" id="temperature" name="temperature" size="5" />
+            degrees
+            <select id="scale" name="scale">
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="celsius">Celsius</option>
+            <select>
+            <button type="button" onclick="checkTemperature()">Analyze</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </body>
+</html>
