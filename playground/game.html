@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess The Number</title>
+    <style>
+
+        #result {
+            color: red;
+        }
+
+        </style>
+        <script>function guessNumber() {
+            var secret = Math.floor(Math.random() * 100) + 1
+            var guess = prompt("What's the number?");
+            var count = 1;
+
+            while (guess != secret) {
+                
+                if (guess > secret){
+                    count++;
+                    alert("That's Too High!");
+                }
+                else if (guess < secret){
+                    count++;
+                    alert("That's Too Low!")
+                }
+                guess = prompt("That's not it! Try again.");
+            }
+            alert("You got it! It took you " + count + " guesses.");
+        }
+
+    </script>
+</head>
+<body> 
+    This example uses a <b>while</b> loop to prompt the user to guess the program's random number. It
+            keeps running until the right guess is made
+        </p>
+
+        <button type="button" onclick="guessNumber()">Guess The Number</button>
+</body>
+</html>

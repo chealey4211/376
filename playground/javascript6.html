@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Lesson 6</title>
+
+        <style>
+
+        #result {
+            color: red;
+        }
+
+        </style>
+
+        <script>
+
+        function printSquares() {
+            var items = "";
+
+            var i = 1;
+            while (i <= 10) {
+                items += "<li>" + Math.pow(i, 2) + "</li>";
+                i++;
+            }
+
+            document.getElementById("squares").innerHTML = items;
+        }
+
+        function guessName() {
+            var guess = prompt("What's my name?");
+            var count = 1;
+
+            while (guess != "Bob") {
+                guess = prompt("That's not it! Try again.");
+                count++;
+            }
+
+            alert("You got it! It took you " + count + " guesses.");
+        }
+
+        //
+
+        </script>
+    </head>
+
+    <body>
+
+        <h1>JavaScript Lesson 6</h1>
+
+        <p>
+            The focus of this lesson is <b>while</b> loops. We will use a while loop to print the
+            first 10 square numbers when you click the button.
+        </p>
+
+        <button type="button" onclick="printSquares()">Click for Square Numbers!</button>
+
+        <ol id="squares"></ol>
+
+        <hr />
+
+        <p>
+            This example uses a <b>while</b> loop to prompt the user to guess the program's name. It
+            keeps running until the right guess is made (hint: it's <i>Bob</i>).
+        </p>
+
+        <button type="button" onclick="guessName()">Guess My Name</button>
+
+        <hr />
+
+        <h2>Exercise 1</h2>
+
+        <p>
+            Write the code to print the first 10 powers of 2 (starting with 0) using a <b>while</b>
+            loop.
+        </p>
+        
+        <hr />
+
+        <h2>Exercise 2</h2>
+
+        <p>
+            Write a function to play a guessing game. The computer should think of a number from 1
+            to 100 and prompt the user to guess it. If the guess is wrong, the computer should
+            tell the user if it was too high or too low. If the guess is right, the computer should
+            tell the user how many guesses it took. You can use this code to generate the random
+            number:
+        </p>
+            <button type="button" onclick="guessName()">Guess My Name</button>
+        <p><code>var secret = Math.floor(Math.random() * 100) + 1</code></p>
+        
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVG Lesson 5</title>
+    </head>
+
+    <body>
+
+        <h1>SVG Lesson 5</h1>
+
+        <svg width="500" height="500">
+
+            <path d="M 10,10 H 50 V 50 H 10 L 10 10" fill="blue" />
+
+            <path d="M 10,100 C 30,200 90,200 110,100" stroke="red" fill="transparent" />
+            
+            <path d="M 100,50 Q 115,75 150,60" stroke="#682286" fill="transparent"/>
+            
+            <path id="fred" d="M 10,200 C 20,100 70,100 80,200" stroke="orange"/>
+            
+            <text>
+                <textpath href="#fred">
+                    my name is Inigo Montoya.
+                </textpath>
+            </text>
+            <path fill="red" stroke="red"
+                d="M 10,30
+                    A 20,20 0,0,1 50,30
+                    A 20,20 0,0,1 90,30
+                    Q 90,60 50,90
+                    Q 10,60 10,30 Z"/>
+
+        </svg>
+
+    </body>
+</html>

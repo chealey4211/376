@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVG Lesson 4</title>
+    </head>
+
+    <body>
+
+        <h1>SVG Lesson 4</h1>
+
+        <svg width="500" height="500">
+
+            <!-- This is a group of elements that creates a face -->
+            <g id="face">
+                <circle cx="100"
+                        cy="100"
+                        r="50"
+                        stroke="black"
+                        stroke-width="2"
+                        fill="yellow" />
+
+                <!-- eyes -->
+                <circle cx="85" cy="85" r="7" />
+                <circle cx="115" cy="85" r="7" />
+
+                <!-- mouth -->
+                <rect x="75" y="110" width="50" height="10" />
+            </g>
+
+            <!-- These next elements re-use that face and display it with different colors and transformations -->
+            <use xlink:href="#face" transform="translate(50, 50)"   fill="red"/>
+            <use xlink:href="#face" transform="translate(100, 100)" fill="blue" />
+            <use xlink:href="#face" transform="translate(150, 150)" fill="green" />
+
+            <use xlink:href="#face" transform="translate(0, 200) scale(0.75)" fill="orange" />
+            <use xlink:href="#face" transform="translate(0, 250) scale(0.50)" fill="purple" />
+            <use xlink:href="#face" transform="translate(0, 300) scale(0.25)" fill="brown" />
+        </svg>
+
+    </body>
+</html>
