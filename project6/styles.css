@@ -1,0 +1,29 @@
+#background{
+    fill: #33cc00
+}
+
+.die {
+    fill:#ffffff;
+    stroke-width: 3;
+    stroke: #000000;
+}
+
+.pip {
+    stroke: #000000;
+    fill: #000000;
+    visibility: hidden;
+}
+#results{
+    fill: #ffffff;
+    font-family: Arial, sans-serif;
+    text-anchor: middle;
+}
+
+#results-container {
+    fill: #000000;
+    stroke: #ffffff;
+}
+#controls {
+    text-align: center;
+    width: 500px;
+}

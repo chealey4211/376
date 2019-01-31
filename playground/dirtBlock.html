@@ -5,7 +5,7 @@
 </head>
 <body>
     
-    <svg width="500" height="500">
+    <svg width="600" height="600">
     
         
         <rect x = "165" y= "105"
@@ -72,7 +72,7 @@
                 width="10" height="10"
                 stroke="black"
                 stroke-width=0
-                fill="black"/>
+                fill="gray"/>
         <rect x = "190" y= "190"
                 width="10" height="10"
                 stroke="black"
@@ -82,7 +82,7 @@
                 width="10" height="10"
                 stroke="black"
                 stroke-width=0
-                fill="black"/>
+                fill="gray"/>
         <rect x = "210" y= "240"
                 width="10" height="10"
                 stroke="black"
@@ -98,7 +98,19 @@
                 stroke="black"
                 stroke-width=0
                 fill="black"/>
-                
+        <polygon points="120,300 400,300 400,350 120,350 "
+                style="fill:green;stroke:black;stroke-width:1" />
+        <path id="fred" d="M 15,200 C 10,10 10,10 10,10"/>
+        <text>
+        <textpath href="#fred">
+                By: Charlie Healey
+            </textpath>
+        </text>
+        <circle cx="450" cy="75" r="50" stroke="gold" stroke-width="10" fill="yellow" />
+        <svg height="600" width="600">
+            <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160"
+                style="fill:white;stroke:green;stroke-width:4" />
+        </svg>
     </svg>
 </body>
 </html>
